@@ -1,11 +1,7 @@
-@font-face {
-  font-family: 'Voga';
-  src: url("Voga-Medium.otf");
-}
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600');
 
-p, body, #maintext {
+
+p, body, #maintext, #about_me {
   padding: 15px;
   text-align: left;
   color: #111111;
@@ -13,7 +9,17 @@ p, body, #maintext {
   text-decoration: none;
   font-size: 20px;
   font-weight: 550;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 300px;
+    height: 1000px;
 }
 
 #maintext {
@@ -22,7 +28,30 @@ p, body, #maintext {
   width: 90%;
   transition: margin-left 1.5s;
   margin-left: 50px;
+  width:30%;
+  background-color: #9e9e9e;
+  position: absolute;
+  overflow: hidden;
+  right: 0%;
+  top: 0;
+  opacity:.7;
 }
+
+#about_me{
+  display:table;
+  height:100vh;
+  width: 90%;
+  transition: margin-left 1.5s;
+  margin-left: 50px;
+  width:50%;
+  background-color: #9e9e9e;
+  position: absolute;
+  overflow: hidden;
+  right: 0%;
+  top: 0;
+  opacity:.7;
+}
+
 #footer {
   margin-bottom: 0;
   bottom:0;
@@ -33,20 +62,39 @@ img {
 }
 
 h1 {
-  font-family: 'Open Sans';
+  padding: 6px 6px 6px 32px;
+  font-family: 'Oswald', sans-serif;
   font-weight: 800;
   color: #000000;
   font-size:23px;
   letter-spacing: .1px;
+  opacity:1;
 }
-a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight:300;
-  color: #000;
-  font-family: 'Open Sans', sans-serif;
+
+.sidenav {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9e9e9e;
+    opacity:.7;
+    padding-top: 60px;
 }
-b, i {color: #808B96;}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size: 18px;
+    color: #000000;
+    opacity:1;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
 
-
+</style>
