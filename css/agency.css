@@ -9,9 +9,6 @@ body {
   font-size: 18px;
 }
 
-body, wrapper {
-    min-height:100vh;
-}
 
 .flex-fill {
     flex:1 1 auto;
