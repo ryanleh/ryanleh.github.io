@@ -6,7 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Slabo 27px', serif;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 body, wrapper {
@@ -52,16 +52,21 @@ h6 {
 }
 
 section {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
+}
 #audition {
     padding: 25px 0;
 }
 
 #contact {
     padding: 25px 0;
+}
+
+#repertoire {
+  margin: 15% auto;
 }
 
 section h2.section-heading {
@@ -82,6 +87,10 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   section {
     padding-top:60px;
+  }
+  #repertoire {
+    margin-left: 15%;
+    margin-right: 15%
   }
 }
 
@@ -463,7 +472,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #alumni .alumni-item .alumni-link {
   position: relative;
-  display: block;
+  display: inline-block;
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
