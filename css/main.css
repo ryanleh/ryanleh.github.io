@@ -39,7 +39,6 @@ a:hover {
   font-family: 'Slabo 27px', serif;
 }
 
-
 h1,
 h2,
 h3,
@@ -65,6 +64,10 @@ section {
     padding: 25px 0;
 }
 
+#member {
+  margin: 15% auto;
+}
+
 #repertoire {
   margin: 15% auto;
 }
@@ -87,6 +90,10 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   section {
     padding-top:60px;
+  }
+  #member {
+    margin-left: 15%;
+    margin-right: 15%
   }
   #repertoire {
     margin-left: 15%;
@@ -250,27 +257,32 @@ header.contact-masthead {
   text-transform: none;
 }
 
+.member-link {
+  cursor: pointer;
+}
+
 #member .member-item {
   right: 0;
   object-fit: scale-down;
+  display: inline-block;
 }
 
 #member .member-item .member-link .member-hover{
-  position: relative;
-  max-width: 400px;
-  max-height: 525px;
+  max-width: 100%;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
  }
 
-#member .member-item .member-link .member-hover img {
+#member .member-item .member-link .member-hover img-fluid {
   max-width: 100%;
+  height:auto;
   -webkit-transition: ease 0.3s;
   -moz-transition: ease 0.3s;
   transition: ease 0.3s;
 }
 
-#member .member-item .member-link .member-hover:hover img{
+#member .member-item .member-link .member-hover:hover img-fluid {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -299,18 +311,19 @@ header.contact-masthead {
 #member .member-item .member-caption {
   max-width: 400px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   background-color: #fff;
 }
 
 #member .member-item .member-caption h4 {
   margin: 0;
-  text-transform: none;
+  text-align: center;
+  font-size: 1em;
 }
 
 #member .member-item .member-caption p {
-  font-size: 16px;
+  font-size: 0.8em;
   font-style: italic;
   margin: 0;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -322,7 +335,13 @@ header.contact-masthead {
 
 @media (min-width: 767px) {
   #member .member-item {
-    margin: 0 0 30px;
+    margin: 0 0 20px;
+  }
+
+  #member .member-item .member-caption h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
   }
 }
 
@@ -330,6 +349,7 @@ header.contact-masthead {
 	width: 80%;
 	margin: 0 auto;
 }
+
 
 .member-modal .modal-dialog {
   margin: 1rem;
@@ -413,6 +433,49 @@ header.contact-masthead {
   background-color: #212529;
 }
 
+.member-prev {
+    position: absolute;
+    opacity: .3;
+    top: 50%;
+    margin-top:-10px;
+}
+
+.member-next {
+    position: absolute;
+    opacity: .3;
+    top: 50%;
+    margin-top:-10px;
+}
+
+
+@media (max-width: 768px) {
+  .member-modal {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .member-modal .modal-content {
+    padding: 55px 0;
+  }
+  .member-modal .modal-content h2 {
+    font-size: 2em;
+  }
+
+  .member-modal .close-modal {
+    height: 50px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .member-modal .close-modal .lr {
+    height: 50px;
+  }
+
+  .member-modal .close-modal .lr .rl {
+    height: 50px;
+  }
+}
+
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
@@ -481,7 +544,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #alumni .alumni-item .alumni-link .alumni-hover {
   position: relative;
   max-width:400px;
-  max-height:525px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -530,14 +592,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #alumni .alumni-item .alumni-caption h4 {
   margin: 0;
-  text-transform: none;
-}
-
-#alumni .alumni-item .alumni-caption p {
-  font-size: 16px;
-  font-style: italic;
-  margin: 0;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 1em;
 }
 
 #alumni * {
@@ -547,6 +603,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 @media (min-width: 767px) {
   #alumni .alumni-item {
     margin: 0 0 30px;
+  }
+  #alumni .alumni-item .alumni-caption h4 {
+    font-size: 1.2em;
   }
 }
 
@@ -561,7 +620,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .alumni-modal .modal-content {
-  padding: 100px 0;
+  padding: 15% 0;
   text-align: center;
 	-webkit-border-radius: 20px !important;
   -moz-border-radius: 20px !important;
@@ -578,13 +637,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 30px;
 }
 
-.alumni-modal .modal-content p.item-intro {
-  font-size: 16px;
-  font-style: italic;
-  margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 .alumni-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
@@ -592,7 +644,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .alumni-modal .modal-content img {
   display: inline-block;
-  margin: 0 50px;
+  margin: 0 5%;
   position: relative;
   max-width:100%;
   transform: translateY(-50%);
