@@ -209,19 +209,16 @@ img::-moz-selection {
   }
 }
 
-
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+  background: url("../img/header-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 header.audition-masthead {
@@ -643,12 +640,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .alumni-modal .modal-content img {
-  display: inline-block;
-  margin: 0 5%;
-  position: relative;
-  max-width:100%;
-  transform: translateY(-50%);
-  top: 50%;
+  margin-top: 11 30 auto;
 }
 
 .alumni-modal .modal-content button {
@@ -692,4 +684,50 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #212529;
+}
+
+.alumni-prev {
+    position: absolute;
+    opacity: .3;
+    top: 50%;
+    margin-top:-10px;
+}
+
+.alumni-next {
+    position: absolute;
+    opacity: .3;
+    top: 50%;
+    margin-top:-10px;
+}
+
+@media (max-width: 768px) {
+  .alumni-modal {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .alumni-modal .modal-content {
+    padding: 55px 0;
+  }
+  .alumni-modal .modal-content h2 {
+    font-size: 2em;
+  }
+
+  .alumni-modal .modal-content img {
+    margin: 10 auto;
+  }
+
+  .alumni-modal .close-modal {
+    height: 50px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .alumni-modal .close-modal .lr {
+    height: 50px;
+  }
+
+  .alumni-modal .close-modal .lr .rl {
+    height: 50px;
+  }
 }
