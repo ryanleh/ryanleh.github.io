@@ -12,10 +12,12 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   text-decoration: none;
+  color: #74b9ff;
 }
 
 a:hover {
   text-decoration: none;
+  color: #0984e3;
 }
 
 h1, h2, h3, h4, h5 {
