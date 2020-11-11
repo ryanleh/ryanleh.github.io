@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   color: #b3b3b3;
   background: #fff;
@@ -37,35 +37,30 @@ header {
   z-index: 5;
 }
 
-main, aside {
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  main, aside {
-    width: 50%;
-  }
-}
-
-aside {
-  background-position: center center;
-  background-size: cover;
-  height: 400px;
-  position: relative;
-}
-
-@media (min-width: 576px) {
-  aside {
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-  }
-}
-
 main {
-  float: left;
+  float: center;
   padding: 7%;
   position: relative;
   padding-bottom: 50px;
+  margin: auto
 }
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
