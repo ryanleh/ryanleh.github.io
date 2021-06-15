@@ -47,15 +47,20 @@ main {
 
 .center {
   margin: auto;
-  width: 80%;
+  width: 60%;
   padding: 10px;
 }
 
-.column {
-  float: right;
-  width: 50%;
+.lcolumn {
+  width: 60%;
   height: 100%;
-  padding: 20px;
+}
+
+.rcolumn {
+  float: right;
+  width: 40%;
+  height: 100%;
+  left-padding: 20px;
 }
 
 .row {
@@ -65,9 +70,9 @@ main {
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
     img {
-        height: 150px;
+        height: 200;
     }
 
      .center {
@@ -76,7 +81,14 @@ main {
       padding: 10px;
     }
 
-    .column {
+    .lcolumn {
+      text-align:center;
+      float: right;
+      width: 100%;
+      height: 100%;
+    }   
+    
+    .rcolumn {
       float: right;
       width: 100%;
       height: 100%;
