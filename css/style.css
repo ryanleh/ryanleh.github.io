@@ -69,10 +69,22 @@ main {
   clear: both;
 }
 
+.img {
+    height: 425px;
+    box-shadow: 10px 10px 3px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 800px) {
-    img {
-        height: 200;
+    .img {
+        height: 200px;
+        box-shadow: 10px 10px 3px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
     }
 
      .center {
