@@ -45,6 +45,10 @@ main {
   margin: auto
 }
 
+hr {
+  width: 60%;
+}
+
 .center {
   margin: auto;
   width: 60%;
