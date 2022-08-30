@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ryanlehm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ryanleh.me
+  * I am ryanlehm (https://keybase.io/ryanlehm) on keybase.
+  * I have a public key ASDMEoGJYs5S68nPCqgVVFvs4Q603iEWBzH4uI-zAfF2-Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cc12818962ce52ebc9cf0aa815545bece10eb4de21160731f8b88fb301f176f90a",
+      "host": "keybase.io",
+      "kid": "0120cc12818962ce52ebc9cf0aa815545bece10eb4de21160731f8b88fb301f176f90a",
+      "uid": "f495ef559ba9045fb02baee0cc5abe19",
+      "username": "ryanlehm"
+    },
+    "merkle_root": {
+      "ctime": 1661868448,
+      "hash": "49ee92be7908b49c88702fe71d46ad462c6791a6ec7e623bc50b8162f2af8bf74b5b544c531319f4658e2a4a1bb0ed08c4c302d2c7bc791aeb86ffadea06af2c",
+      "hash_meta": "9375fcf3e2f488c8a91cfdadd3e775b15fdf6bb2e282116a67bfad9781814d83",
+      "seqno": 23110968
+    },
+    "service": {
+      "entropy": "Z7OU7kblWNsh0hqbrL6F37Ql",
+      "hostname": "ryanleh.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1661868507,
+  "expire_in": 504576000,
+  "prev": "36dfb6bfc39bfa541ceb3f5af57cae4ae489796921c2529035c4284f8eb689ad",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgzBKBiWLOUuvJzwqoFVRb7OEOtN4hFgcx+LiPswHxdvkKp3BheWxvYWTESpcCBcQgNt+2v8Ob+lQc6z9a9XyuSuSJeWkhwlKQNcQoT462ia3EIOvKsYxdnHnZ/1b9ZcHyDlk3oddJ7ddmhryZxg2AcmvXAgHCo3NpZ8RAs1SVykibDi+VJeOstsVhIqM/pMsQTxJs1eJ+yybC816nIBDJkTJSEtxuV1RFoLpa3G25p/uULU/ETPGlnXPLBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFY3vxNJWAf2CEUE0XqLV5T6j+hEv5Yqdekd0LS+cS2Jo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ryanlehm
+
+==================================================================
