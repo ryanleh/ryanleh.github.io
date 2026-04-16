@@ -1,12 +1,16 @@
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  /*font-family: "Open Sans", Arial, sans-serif;*/
+  font-family: 'Nunito', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
-  color: #8a8a8a;
+  /*color: #8a8a8a;*/
+  /*color: #2A1C14;*/
+  color: #3A2C24;
 /*  background: #fafafa;*/
   /*background: #F7F2ED;*/
-  background: #fafafa;
+  /*background: #fafafa;*/
+  background: #ECD8C8;
 }
 
 a {
@@ -14,7 +18,10 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   text-decoration: none;
-  color: #74b9ff;
+  color: #8B4C34;
+  text-decoration: underline;
+  text-underline-offset: 0.2em; /* Pushes the line down slightly */
+  text-decoration-thickness: 0.7px;
 }
 
 a:hover {
@@ -22,14 +29,21 @@ a:hover {
   color: #0984e3;
 }
 
-h1, h2, h4, h5 {
-  color: #000;
-  font-family: "Playfair Display", times, serif;
+h1 {
+  color: #2B211C;
+  font-family: 'Nunito', sans-serif;
 }
 
-h3 {  
-  color: #000;
+h2, h4 {
+  color: #3A2C24;
+  font-family: 'Nunito', sans-serif;
 }
+
+h5 {
+  color: #5C4A40;
+  font-family: 'Nunito', sans-serif;
+}
+
 
 header {
   position: absolute;
@@ -48,12 +62,18 @@ main {
 }
 
 hr {
-  width: 60%;
+  width: 75%;
+  background-color: #D6C8BD;
+}
+
+hr.top {
+  width: 100%;
+  background-color: #D6C8BD;
 }
 
 .center {
   margin: auto;
-  width: 60%;
+  width: 75%;
   padding: 10px;
 }
 
